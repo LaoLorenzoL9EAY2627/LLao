@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBMC Robotics Club Application FormOBMC Robotics Club Application Form</title>
+</head>    
+    <style>
+        hr{color: #7adfbb;}
+        body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        h1{color: #4e6e58;}
+        h2{color: #544b3d;}
+        h3{color: #4e6e58;}
+        li{color: #544b3d;
+        line-height: 24px;}
+        p{color: #544b3d;}
+        a{
+            color: #7adfbb;
+            padding: 19px;
+            border:solid #4c8577;
+            border-width: 1px;
+            border-radius: 10px;
+            background-color: #a6ece0;
+            text-decoration: none;
+        }
+
+        div{
+            border:  1px solid #4e6e58;
+            border-radius: 12px;
+            padding: 17px;
+            background-color: #a6ece0;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px  ;
+        }
+        input[type="text"]{
+            width: 400px;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        input[type="email"]{
+            width: 400px;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        .gender{
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-items: center;
+            background-color: #b5ecc7;
+        }
+
+        .Header{
+            display: flex;
+            align-items: c;
+            flex-direction: row;
+            padding: 24px;
+            border-radius: 12px;
+            background-color: #7adfbb;
+            text-align: center;
+        }
+        .Footer{
+            background-color: #7adfbb;
+            text-align: center;
+            padding: 24px;
+        }
+        img{
+            border-radius: 12px;
+        }
+        .Welcome{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        select{
+            padding: 12px;
+            border-radius: 12px;
+            width: 200px;
+        }
+        option{
+            padding: 12px;
+            border-radius: 12px;
+            width: 200px;
+        }
+        .levelsec{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px ;
+            background-color: #00000000;
+            border: #00000000;
+            box-shadow: none;
+        }
+        textarea{
+            border-radius: 12px;
+        }
+
+
+    </style>
+
+<body style="background-color: #d8f3ee;">
+<!--Title Header-->
+    <div class="Header">
+        <img style="width: 175px;" src="https://storage.googleapis.com/oa_disk001/obgreenhills/65/documents/1768434887-159.png" alt="butterfly">
+        <h1 style="align-self: center; flex-grow: 1;"><b>OBMC Robotics Club Application Form</b></h1>
+    </div> <hr>
+
+<!--The Form-->
+    <div class="Welcome">
+        <img style="width: 200px" src="https://thumbs.dreamstime.com/b/robot-hello-d-white-plastic-waving-saying-japanese-cute-style-31310829.jpg" alt="">
+        <h3>Welcome! Please fill out this form to apply for our schools Robotics Club.</h3>
+
+    <form action="">
+        <fieldset style="border-radius: 12px; background-color: #89b697; border-color: #544b3d;">
+
+<!--Student Info-->
+             <legend style="text-align: start; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #25221c;"><b>Student Info:</b></legend>
+
+             <br>
+
+             <label for="Full Name">Full Name:</label><input type="text" name="Full Name" id=""><br>
+             <label for="Email">Email:</label><input type="email" name="Email" id=""><br>
+
+        <div style="background-color: #92d8c7;">
+         <h3 style="color: #25221c;">Grade Level and Section</h2>
+
+            <div class="levelsec">
+ 
+             <select name="Year Level" id="Year Level">
+                <option value="Year Level">Grade 7</option>
+                <option value="Year Level">Grade 8</option>
+                <option value="Year Level">Grade 9</option>
+                <option value="Year Level">Grade 10</option>
+             </select> <br>
+
+             <select name="Section" id="Section">
+                <option value="Section">Emerald</option>
+                <option value="Section">Ruby</option>
+                <option value="Section">Sapphire</option>
+                <option value="Section">Topaz</option>
+                <option value="Section">Jade</option>
+             </select> 
+            </div> <br>
+        </div>
+             
+             
+             <h2 style="color: #25221c;">Gender:</h2> 
+
+         <div class="gender">
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Gender">Male </label>
+            <br>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Gender">Female </label>
+         </div> <br>
+
+            <h2 style="color: #25221c;">What are your skills?</h2>
+
+         <div class="gender">
+            <input type="checkbox" name="skills?" id="Coding" value="Coding">
+            <label for="skills?">Coding</label>
+
+            <input type="checkbox" name="skills?" id="Design" value="Design">
+            <label for="skills?">Design</label>
+
+            <input type="checkbox" name="skills?" id="Electronics" value="Electronics">
+            <label for="skills?">Electronics</label>
+         </div> <br>
+
+<!--Interests-->
+         <h2 style="color: #25221c;">What makes you want to join?</h2>
+         
+         <textarea name="Reason" id="" placeholder="I want to join because.."></textarea>
+
+         <br>
+
+         <input type="submit" style="padding: 24px; border-radius: 12px; width: 200px; background-color: #a6ece0;">
+
+        </fieldset>
+    </div>
+    </form><br>
+
+<!--The Footer-->
+    <footer>
+    <div class="Footer">
+        <h1>© 2026 Robotics Club Application Form | Created by Lorenzo Lao, 9-Emerald</h1>
+    </div>
+    </footer>
+
+</body>
+</html>
